@@ -1,24 +1,17 @@
 import Carousel from 'nuka-carousel';
 
-import sample1 from './listingpics/sample.jpg'
-
-
-const handleDragStart = (e) => e.preventDefault();
-
-const items = [
-  <img src={sample1} onDragStart={handleDragStart} role="presentation" />,
-  <img src={sample1} onDragStart={handleDragStart} role="presentation" />,
-  <img src={sample1} onDragStart={handleDragStart} role="presentation" />,
-];
+import sample from './listingpics/sample.jpg'
+import sample2 from './listingpics/sample2.jpg'
+import sample3 from './listingpics/sample3.jpg'
 
 export const Gallery = () => {
   return (
     <Carousel>
-      <img src={sample1} />
-      <img src={sample1} />
-      <img src={sample1} />
-      <img src={sample1} />
-      <img src={sample1} />
+      <img src={sample} />
+      <img src={sample2} />
+      <img src={sample3} />
+      <img src={sample} />
+      <img src={sample} />
   </Carousel>
   );
 }

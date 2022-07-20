@@ -1,24 +1,28 @@
 import './listingStyle.css'
-import sample1 from './listingpics/sample.jpg'
 import {FaBed} from 'react-icons/fa'
 import {FaShower} from 'react-icons/fa'
 import {MdGrid3X3} from 'react-icons/md'
 import Gallery from './Gallery'
 
-export const Listing = () => {
+export const Listing = ( {property}) => {
   return (
     <div className="listingBox">
         <div className='listing-img'>
             <Gallery/>
         </div>
-        <h3>Ayala Alabang</h3>
-        <div className='listing-details'>
-            <p><FaBed/> 3</p>
 
-            <p><FaShower/> 3</p>
-            <p><MdGrid3X3/> 250</p>
-
+        <div className='listing-desc'>
+          <h3>{property.title}</h3>
+          <p>{property.listingType}</p>
+          <p>{property.price}</p>
         </div>
+
+        <div className='listing-details'>
+            <p><FaBed/> {property.br}</p>
+            <p><FaShower/> {property.cr}</p>
+            <p><MdGrid3X3/> {property.fa}</p>
+        </div>
+
     </div>
   )
 }

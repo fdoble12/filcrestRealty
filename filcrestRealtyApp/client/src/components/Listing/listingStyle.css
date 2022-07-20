@@ -16,7 +16,6 @@
 }
 
 .listing-details {
-    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3,auto);
     
@@ -25,5 +24,9 @@
 .listing-details p{
     margin: 0px;
     text-align: center;
+}
+
+.listing-desc{
+    margin: 10px;
 }
 
